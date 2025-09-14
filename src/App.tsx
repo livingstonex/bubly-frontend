@@ -10,6 +10,7 @@ import { AuthGuard } from './guards/auth-guard';
 import AppLayout from './app/layout/app-layout';
 import OnboardingFlow from './pages/onboarding/page';
 import { OnboardingGuard } from './guards/onboarding-guard';
+import { PaymentSuccess } from './pages/payment/payment-success';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path={ROUTES.OTP} element={<Otp />} />
       <Route path={ROUTES.FORGOT_PASSWORD} element={<ForgotPassword />} />
       <Route path={ROUTES.RESET_PASSWORD} element={<ResetPassword />} />
+      <Route path={ROUTES.PAYMENT_SUCCESSFUL} element={<PaymentSuccess />} />
 
       <Route
         element={

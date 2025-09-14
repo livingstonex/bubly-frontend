@@ -31,4 +31,5 @@ export const ROUTES = Object.freeze({
   RESET_PASSWORD: '/reset-password',
   DASHBOARD: '/dashboard',
   ONBOARDING: '/onboarding',
+  PAYMENT_SUCCESSFUL: '/payment-successful',
 });
