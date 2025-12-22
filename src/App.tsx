@@ -11,6 +11,7 @@ import AppLayout from './app/layout/app-layout';
 import OnboardingFlow from './pages/onboarding/page';
 import { OnboardingGuard } from './guards/onboarding-guard';
 import { PaymentSuccess } from './pages/payment/payment-success';
+import { PricingDemo } from './pages/subscription/pricing-demo';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path={ROUTES.FORGOT_PASSWORD} element={<ForgotPassword />} />
       <Route path={ROUTES.RESET_PASSWORD} element={<ResetPassword />} />
       <Route path={ROUTES.PAYMENT_SUCCESSFUL} element={<PaymentSuccess />} />
+      <Route path={ROUTES.PRICING} element={<PricingDemo />} />
 
       <Route
         element={

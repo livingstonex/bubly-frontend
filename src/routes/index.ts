@@ -32,4 +32,5 @@ export const ROUTES = Object.freeze({
   DASHBOARD: '/dashboard',
   ONBOARDING: '/onboarding',
   PAYMENT_SUCCESSFUL: '/payment-successful',
+  PRICING: '/pricing',
 });

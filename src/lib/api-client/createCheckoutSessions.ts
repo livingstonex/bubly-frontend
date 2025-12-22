@@ -18,10 +18,10 @@ const checkoutSessionResponseSchema = z.object({
 
 export async function createCheckoutSession(
   payload: z.infer<typeof CheckoutSessionPayloadSchema>
-) {
+): Promise<z.infer<typeof checkoutSessionResponseSchema>> {
   return API.post(createCheckoutSession.endpoint, payload).then(
     parseWith(createCheckoutSession.responseSchema)
-  );
+  ) as Promise<z.infer<typeof checkoutSessionResponseSchema>>;
 }
 
 createCheckoutSession.endpoint = '/stripe/subscription/create-checkout-session';
